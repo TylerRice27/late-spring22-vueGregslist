@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row g-3 my-2">
       <House v-for="h in houses" :key="h.id" :house="h" />
-      <div class="component">Houses Page</div>
+      <!-- <div class="component">Houses Page</div> -->
     </div>
   </div>
   <Modal id="house-form">

@@ -64,6 +64,14 @@ export default {
           logger.error(error);
         }
       },
+      async editHouse() {
+        try {
+          await housesService.editHouse();
+        } catch (error) {
+          Pop.toast(error.message, "error");
+          logger.error(error);
+        }
+      },
     };
   },
 };
